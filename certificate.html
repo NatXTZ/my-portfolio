@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.9.0/css/foundation.min.css">
+    <link rel="stylesheet" href="Certificate.css">
+    <link rel="stylesheet" href="custom-mosue.css">
+    <script src="audio.js"></script>
+    <title>Nat's Certificate</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 20px;
+        }
+        .gallery {
+            max-width: 600px;
+            width: 100%;
+        }
+        .work img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .work img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor"></div>
+
+    <script>
+        document.addEventListener('mousemove', e => {
+            const cursor = document.querySelector('.cursor');
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+    </script>
+    <header>
+        <a href="index.html" class="logo">NatTHz</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="certificate.html" class="active">Certificate</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experi.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <hr>
+
+    <div class="gallery grid-container">
+        <div class="grid-x grid-margin-x small-up-1 medium-up-3">
+            <!-- 9 รูป 3 แถว -->
+            <div class="cell">
+                <div class="work">
+                    <img src="Screenshot 2025-02-18 210435.jpg" alt="Certificate 1">
+                </div>
+            </div>
+            <div class="cell">
+                <div class="work">
+                    <img src="Screenshot 2025-02-18 210435.jpg" alt="Certificate 2">
+                </div>
+            </div>
+            <div class="cell">
+                <div class="work">
+                    <img src="Screenshot 2025-02-18 210435.jpg" alt="Certificate 3">
+                </div>
+            </div>
+            <div class="cell">
+                <div class="work">
+                    <img src="Screenshot 2025-02-18 210435.jpg" alt="Certificate 4">
+                </div>
+            </div>
+            <div class="cell">
+                <div class="work">
+                    <img src="Screenshot 2025-02-18 210435.jpg" alt="Certificate 5">
+                </div>
+            </div>
+            <div class="cell">
+                <div class="work">
+                    <img src="Screenshot 2025-02-18 210435.jpg" alt="Certificate 6">
+                </div>
+            </div>
+            <div class="cell">
+                <div class="work">
+                    <img src="Screenshot 2025-02-18 210435.jpg" alt="Certificate 7">
+                </div>
+            </div>
+            <div class="cell">
+                <div class="work">
+                    <img src="Screenshot 2025-02-18 210435.jpg" alt="Certificate 8">
+                </div>
+            </div>
+            <div class="cell">
+                <div class="work">
+                    <img src="Screenshot 2025-02-18 210435.jpg" alt="Certificate 9">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.9.0/js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>

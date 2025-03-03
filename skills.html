@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.9.0/css/foundation.min.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="custom-mosue.css">
+    <script src="audio.js"></script>
+    <title>Nat's Skills</title>
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <script>
+        document.addEventListener('mousemove', e => {
+            const cursor = document.querySelector('.cursor');
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+    </script>
+    <header>
+        <a href="index.html" class="logo">NatTHz</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="certificate.html">Certificate</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experi.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="skill-container">
+        <h2 class="heading">My Coding Skills 🚀🚀</h2>
+
+        <div class="skill">
+            <p>HTML</p>
+            <div class="progress-box">
+                <div class="progress-bar html" style="--skill-level: 90%;">90%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>CSS</p>
+            <div class="progress-box">
+                <div class="progress-bar css" style="--skill-level: 85%;">85%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="progress-box">
+                <div class="progress-bar js" style="--skill-level: 80%;">80%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>Python</p>
+            <div class="progress-box">
+                <div class="progress-bar python" style="--skill-level: 75%;">75%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>Pygame</p>
+            <div class="progress-box">
+                <div class="progress-bar pygame" style="--skill-level: 70%;">70%</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

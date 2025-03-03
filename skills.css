@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover,
+nav a.active{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill-container {
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.skill {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.skill p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-box {
+    width: 100%;
+    height: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    text-align: right;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    padding-right: 10px;
+    width: 0;
+    animation: fillProgress 3.5s ease-in-out forwards; /* ปรับเป็น 3.5s */
+}
+
+.progress-bar {
+    height: 100%;
+    text-align: right;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    padding-right: 10px;
+    width: 0;
+    animation: fillProgress 2s ease-out forwards;
+}
+
+/* ความกว้างของแต่ละสกิล */
+.html { background-color: #e34c26; animation-delay: 0.2s; }
+.css { background-color: #264de4; animation-delay: 0.4s; }
+.js { background-color: #f7df1e; color: black; animation-delay: 0.6s; }
+.python { background-color: #306998; animation-delay: 0.8s; }
+.pygame { background-color: #4caf50; animation-delay: 1s; }
+
+/* Animation ให้ Progress Bar ค่อย ๆ เพิ่มขึ้น */
+@keyframes fillProgress {
+    to {
+        width: var(--skill-level);
+    }
+}

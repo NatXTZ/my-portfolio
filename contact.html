@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="custom-mosue.css">
+    <script src="audio.js"></script>
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <div class="wrapper">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+</div>
+
+    <div class="cursor"></div>
+
+    <script>
+        document.addEventListener('mousemove', e => {
+            const cursor = document.querySelector('.cursor');
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+    </script>
+
+    <header>
+        <a href="index.html" class="logo">NatTHz</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="certificate.html">Certificate</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experi.html">Experience</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="contact-header">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="contact-details">
+            <div class="contact-info">
+                <h3>Address</h3>
+                <p>84 หมู่ 6 ต.บางขุนไทร อ.บ้านแหลม จ.เพชรบุรี</p>
+            </div>
+            <div class="contact-info">
+                <h3>Email</h3>
+                <p>fakenattharatz@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <h3>Phone</h3>
+                <p>(+66) 63 505 7184</p>
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+</html>

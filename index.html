@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom-mosue.css">
+    <link rel="stylesheet" href="background.css">
+    <script src="audio.js"></script>
+    <title>Nat's Portfolio</title>
+</head>
+<body>
+
+    <div class="wrapper">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+</div>
+
+    <div class="cursor"></div>
+
+    <script>
+        document.addEventListener('mousemove', e => {
+            const cursor = document.querySelector('.cursor');
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+        document.querySelector(".cursor").style.display = "none";
+        }
+        });
+        function toggleMenu() {
+        document.querySelector("nav").classList.toggle("show");
+        }
+
+
+    </script>
+
+    <!-- แทรกเพลงในหน้าแรก -->
+    <audio id="background-music" autoplay loop>
+        <source src="30 Minute Timer Lofi.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <header>
+        <a href="index.html" class="logo">NatTHz</a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <nav>
+            <a href="#" class="active"> Home</a>
+            <a href="certificate.html">Certificate</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html">Education</a>
+            <a href="experi.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="475770953_588123324016171_2129839714016015872_n.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Nattharat</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>I aspire to study at King Mongkut’s University of Technology North Bangkok (KMUTNB) to pursue my passion in programming and Web Dev</p>
+            <div class="social-icons">
+                <a href="https://github.com/NatXTZ" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://discord.gg/cpNBKHc49z" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.facebook.com/nattharat.309833" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/nat_xtz/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Contact me</a>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nat's Experience</title>
+    <link rel="stylesheet" href="experi.css">
+    <link rel="stylesheet" href="custom-mosue.css">
+    <script src="audio.js"></script>
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <script>
+        document.addEventListener('mousemove', e => {
+            const cursor = document.querySelector('.cursor');
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+        });
+    </script>
+    <header>
+        <a href="index.html" class="logo">NatTHz</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="certificate.html">Certificate</a>
+            <a href="skills.html">Skills</a>
+            <a href="education.html" >Education</a>
+            <a href="experi.html" class="active">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Experience</h2>
+        <div class="experience">
+            <h3>Freelance</h3>
+            <p>Still Free | Jan 2024 - Present</p>
+            <p>กำลังหาประสบการ์ณในการทำงาน </p>
+            <!-- เพิ่มรูปภาพตรงนี้ -->
+        <div class="experience-img">
+            <img src="Screenshot 2025-02-23 115753.png" alt="Freelance Image">
+            <a href="https://www.instagram.com/nat_xtz/" target="_blank" class="btn hire-btn">Hire Me</a>
+        </div>
+    </div>
+</body>
+</html>

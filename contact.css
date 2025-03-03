@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: black;
+    background: #000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: rgba(0, 0, 0, 0.8);
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover,
+nav a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+section {
+    min-height: 100vh; /* ทำให้ section เต็มหน้าจอ */
+    padding: 5rem 9%; /* ระยะห่างจากขอบ */
+    display: flex; /* ใช้ flexbox */
+    justify-content: center; /* จัดให้เนื้อหาอยู่กลางหน้าจอ */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    text-align: center; /* ข้อความให้อยู่ตรงกลาง */
+    flex-direction: column; /* ทำให้เนื้อหาภายในอยู่ในคอลัมน์ */
+}
+
+/* ปรับส่วนของ Contact */
+.contact {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    margin-bottom: 2rem;
+}
+
+.contact-header h2 {
+    font-size: 3rem;
+    color: #b74b4b;
+    margin-bottom: 1rem;
+}
+
+.contact-text {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #b74b4b; /* สีสำหรับหัวข้อ */
+}
+
+.contact h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.contact .highlight-text {
+    color: #b74b4b;
+}
+
+.contact p {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 1.8rem;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #b74b4b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-container {
+    width: 100%; /* ใช้ความกว้างเต็มที่ */
+    max-width: 1200px; /* กำหนดความกว้างสูงสุด */
+    display: flex; /* ใช้ flexbox */
+    justify-content: space-between; /* จัดให้ข้อมูลอยู่ข้างๆ กัน */
+    align-items: center; /* จัดให้ข้อมูลอยู่กลางแนวตั้ง */
+    flex-wrap: wrap; /* ข้อความไม่หักลบเมื่อขนาดหน้าจอเล็ก */
+}
+
+.contact-info span {
+    color: #b74b4b; /* ทำให้ข้อความที่สำคัญเป็นสีแดง */
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 2rem;
+    }
+
+    .contact {
+        width: 90%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+
+    .contact-text {
+        font-size: 2rem;
+    }
+
+    .contact-info {
+        font-size: 1.6rem;
+    }
+
+    .contact-info a {
+        font-size: 1.6rem;
+    }
+}
